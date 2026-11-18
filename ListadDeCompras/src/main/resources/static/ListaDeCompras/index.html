@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<main class="container">
+
+    <header>
+        <h1>Lista de Compras</h1>
+        <p>Organize suas compras de maneira simples.</p>
+    </header>
+
+    <section class="formulario">
+        <input type="text" id="produto" placeholder="Nome do produto">
+
+        <input type="number" id="quantidade"
+               placeholder="Qtd." min="1" value="1">
+
+        <button id="btnAdicionar" onclick="adicionarItem()">
+            Adicionar
+        </button>
+    </section>
+
+    <section class="pesquisa">
+        <input type="number" id="pesquisarId"
+               placeholder="Pesquisar produto pelo ID"
+               min="1" oninput="pesquisarItem()">
+    </section>
+
+    <section class="lista">
+        <h2>Meus produtos</h2>
+
+        <ul id="listaCompras"></ul>
+
+        <p id="mensagemVazia">Sua lista está vazia.</p>
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

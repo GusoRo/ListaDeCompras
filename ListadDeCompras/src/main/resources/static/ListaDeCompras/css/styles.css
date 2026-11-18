@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #00000015;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 0;
+}
+
+#produto {
+    flex: 1;
+}
+
+#quantidade {
+    width: 75px;
+}
+
+button {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #28a745;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.pesquisa {
+    margin-bottom: 25px;
+}
+
+.pesquisa input {
+    width: 100%;
+}
+
+.lista h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.item.comprado .nome {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-wrap: anywhere;
+}
+
+.id-produto {
+    color: #777;
+    font-size: 12px;
+}
+
+.acoes {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.editar {
+    background-color: #007bff;
+}
+
+.excluir {
+    background-color: #dc3545;
+}
+
+#mensagemVazia {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .formulario {
+        flex-wrap: wrap;
+    }
+
+    #produto {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .item {
+        align-items: flex-start;
+    }
+
+    .acoes button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
